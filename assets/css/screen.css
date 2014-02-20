@@ -900,6 +900,10 @@ nav li a {
 
 @media only screen and (max-width: 500px) {
 
+    nav li a {
+        padding: 0.5em;
+    }
+    
     .blog-logo img {
         max-height: 80px;
     }
@@ -907,8 +911,6 @@ nav li a {
     .inner, 
     .pagination {
         width: auto;
-        margin-left: 16px;
-        margin-right: 16px;
     }
 
     .post {
