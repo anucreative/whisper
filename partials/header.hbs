@@ -1,0 +1,13 @@
+<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{else}}style="background-image: url(/assets/images/bg.jpg)"{{/if}}>
+    <div class="vertical">
+        <div class="site-head-content inner">
+            {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+            <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+            <nav>
+              <li><a href="/vision">Vision</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </nav>
+        </div>
+    </div>
+</header>

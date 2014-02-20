@@ -41,6 +41,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'chalkdustregular';
+    src: url('../fonts/chalkdust-webfont.eot');
+    src: url('../fonts/chalkdust-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/chalkdust-webfont.woff') format('woff'),
+         url('../fonts/chalkdust-webfont.ttf') format('truetype'),
+         url('../fonts/chalkdust-webfont.svg#chalkdustregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Apply these base styles to all icons */
 .icon-ghost:before, 
 .icon-feed:before, 
@@ -114,8 +125,11 @@ h1, h2, h3,
 h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 1;
-    margin-top: 0;
+    /*margin-top: 0;*/
     font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: #FC0;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -149,17 +163,17 @@ h6 {
 }
 
 a {
-    color: #4a4a4a;
+    color: #333;
     transition: color ease 0.3s;
 }
 
 a:hover {
-    color: #57A3E8;
+    color: #FC0;
 }
 
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
-    color: #50585D;
+    color: #333;
 }
 
 
@@ -270,7 +284,6 @@ kbd {
     padding: 1px 8px;
     border: #ccc 1px solid;
     color: #666;
-    text-shadow: #fff 0 1px 0;
     font-size: 0.9em;
     font-weight: bold;
     background: #f4f4f4;
@@ -398,14 +411,16 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: bold;
+    /*font-family: 'chalkdustregular', serif;*/
     font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
     text-shadow: 1px 1px 2px #333333;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .blog-title a {
     text-decoration: none;
-    color: #fff;
+    color: #FC0;
 }
 
 .blog-description {
@@ -413,10 +428,28 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.8rem;
     line-height: 1.5em;
     font-weight: 300;
-    font-family: 'Roboto Slab', serif;
     letter-spacing: 0;
     text-shadow: 1px 1px 2px #333333;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px #333333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    padding: 1em;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -430,8 +463,8 @@ margin on the iframe, cause it breaks stuff. */
     word-break: break-word;
     hyphens: auto;
     padding: 25px 30px 35px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    /*border: 1px solid #ccc;*/
+    /*background-color: #fff;*/
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
@@ -462,12 +495,12 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-title a:hover {
-    color: #117ACB;
+    color: #FC0;
 }
 
 .post-excerpt p {
     margin: 1.6rem 0 0 0;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.6em;
 }
 
