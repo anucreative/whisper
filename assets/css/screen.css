@@ -903,7 +903,7 @@ nav li a {
     nav li a {
         padding: 0.5em;
     }
-    
+
     .blog-logo img {
         max-height: 80px;
     }
@@ -915,8 +915,6 @@ nav li a {
 
     .post {
         width:auto;
-        margin-left: 16px;
-        margin-right: 16px;
         font-size: 0.8em;
         line-height: 1.6em;
     }
