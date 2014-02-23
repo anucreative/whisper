@@ -128,7 +128,7 @@ h4, h5, h6 {
     /*margin-top: 0;*/
     font-family: 'Roboto Slab', serif;
     text-align: center;
-    color: #FC0;
+    color: #F89C1B;
     text-transform: uppercase;
 }
 
@@ -168,7 +168,7 @@ a {
 }
 
 a:hover {
-    color: #FC0;
+    color: #F89C1B;
 }
 
 h1 a, h2 a, h3 a,
@@ -380,6 +380,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Big cover image on the home page */
 .site-head {
+    padding-top: 40px;
     position: relative;
     display: table;
     width: 100%;
@@ -400,7 +401,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 .blog-logo img {
     display: block;
-    max-height: 100px;
+    max-width: 500px;
     width: auto;
     margin: 0 auto;
     line-height: 0;
@@ -408,7 +409,8 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
-    margin: 10px 0 10px 0;
+    max-width: 500px;
+    margin: 10px auto;
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: bold;
@@ -421,7 +423,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .blog-title a {
     text-decoration: none;
-    color: #FC0;
+    color: #F89C1B;
 }
 
 .blog-description {
@@ -435,22 +437,28 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 nav {
+    max-width: 500px;
+    margin: 40px auto 0;
     font-family: 'Roboto Slab', serif;
-    font-size: 1em;
-    text-shadow: 1px 1px 2px #333333;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    border-top: 8px solid #F89C1B;
+    border-bottom: 8px solid #F89C1B;
 }
 
 nav li {
     display: inline-block;
 }
 
-nav li a {
+nav a {
     display: block;
-    padding: 1em;
-    color: #FFF;
+    padding: 0.5em 1.5em;
+    color: #F89C1B;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    color: #FFF;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -496,7 +504,7 @@ nav li a {
 }
 
 .post-title a:hover {
-    color: #FC0;
+    color: #F89C1B;
 }
 
 .post-excerpt p {
@@ -848,7 +856,12 @@ nav li a {
         box-sizing: border-box; 
         height: auto;
         min-height: 240px;
-        padding: 15% 0;
+        padding-top: 50px;
+    }
+
+    .blog-logo img {
+        max-height: 250px;
+        max-width: 100%;
     }
 
     .blog-title {
@@ -900,12 +913,12 @@ nav li a {
 
 @media only screen and (max-width: 500px) {
 
-    nav li a {
-        padding: 0.5em;
+    .blog-logo img {
+        max-width: 90%;
     }
 
-    .blog-logo img {
-        max-height: 80px;
+    nav li a {
+        padding: 0.5em;
     }
 
     .inner, 
@@ -920,7 +933,7 @@ nav li a {
     }
 
     .site-head {
-        padding: 10% 0;
+        padding-top: 40px;
     }
 
     .blog-title {
